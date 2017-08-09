@@ -4,6 +4,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 
+
 <html lang="en">
 
 <jsp:include page="fragments/headTag.jsp"/>
