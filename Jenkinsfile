@@ -18,8 +18,8 @@ pipeline {
 		stage('Deploying'){
 			steps{
 				echo 'Deploying to tomcat'
-				sh 'scp  /var/lib/jenkins/workspace/PET_Clinic/target/petclinic.war  root@52.29.22.138:/opt/tomcat/webapps'
-				echo 'Deployed'
+				sh "scp  ${env.JENKINS_HOME}/workspace/${env.JOB_NAME}/target/petclinic.war  root@52.29.22.138:/opt/tomcat/webapps"
+ 	 			echo 'Deployed'
 				}
 			}
 
